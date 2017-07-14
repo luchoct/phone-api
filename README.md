@@ -8,16 +8,19 @@ Gradle 3 java web application.
 * Jackson
 * HSQLDB
 
+## API documentation
+Launch `/swagger-ui.html` resource.
+
 ## Run from local
 Build and run with
 ```
-gradle clean build && java -jar ./build/libs/phone-api-1.0-SNAPSHOT.jar
+gradle clean build && java -jar ./build/libs/phone-api-1.0.1.jar
 ```
 ## Run with docker
 Image is published in docker hub
 You can run it with docker
 ```
-> docker run --rm -p 8080:8080 luchoct/phone-api:1.0.0
+> docker run --rm -p 8080:8080 luchoct/phone-api:1.0.1
 ```
 Published port should be `8080` as that is the port used by phone-web website.
 
