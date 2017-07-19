@@ -54,7 +54,6 @@ dependencies {
 }
 
 test {
-    systemProperty "spring.profiles.active", "test"
     testLogging {
         exceptionFormat = 'full'
     }
