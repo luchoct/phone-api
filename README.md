@@ -18,11 +18,17 @@ gradle clean build && java -jar ./build/libs/phone-api-1.0.1.jar
 ```
 ## Run with docker
 Image is published in docker hub
+
 You can run it with docker
 ```
-> docker run --rm -p 8080:8080 luchoct/phone-api:1.0.1
+docker run --rm -p 8080:8080 luchoct/phone-api:1.0.1
 ```
 Published port should be `8080` as that is the port used by phone-web website.
+
+### Create image and push image to registry
+```
+gradle build buildDocker
+```
 
 # Changelog
 * 2017-06-13 Version 1.0 Initial version
